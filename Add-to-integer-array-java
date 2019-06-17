@@ -1,0 +1,26 @@
+**
+ * @author msfata ProgrammingHelp
+ *
+ */
+public class AddToIntegerArray {
+	private static int arrayIntAddOne(int[] array, int addNumber) {
+		/*
+		 * convert it from array of int to string
+		 */
+		String arrayToString = "";
+		for (int i : array) {
+			arrayToString += i;
+		}
+
+		/*
+		 * convert string to int and add favourite number to it
+		 */
+		int plusOne = Integer.parseInt(arrayToString) + addNumber;
+		return plusOne;
+	}
+
+	public static void main(String[] args) {
+		int[] array = { 1, 2, 3, 9 };
+		System.out.println(arrayIntAddOne(array, 50));
+	}
+}
